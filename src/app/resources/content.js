@@ -35,7 +35,7 @@ const social = [
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/roelmacias/",
+    link: "https://www.linkedin.com/in/solarwinds/",
   },
   {
     name: "X",
@@ -55,16 +55,17 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Crafting visual stories that convert</>,
+  headline: <>Transitioning from web2.0 to web3</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: <>Recent project: <strong className="ml-4">SolarWinds</strong></>,
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
     <>
-      I'm {person.firstName}, a {person.role} at SOLARWINDS, where I create high-impact visual campaigns
-      <br /> and design solutions. I love bringing ideas to life through design.
+      I'm {person.firstName}, a {person.role} at SolarWinds, where I create high-impact visual campaigns and
+      <br />design solutions. I have many years of experience
+      <br />bringing ideas to life.
     </>
   ),
 };
@@ -100,7 +101,7 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "SOLARWINDS",
+        company: "SolarWinds",
         timeframe: "NOV 2021 - Present",
         role: "Senior Graphic Design Specialist",
         achievements: [
@@ -137,7 +138,7 @@ const about = {
         ],
       },
       {
-        company: "HELLAS CONSTRUCTION",
+        company: "Hellas Construction",
         timeframe: "OCT 2019 - OCT 2022",
         role: "Graphic Designer",
         achievements: [
@@ -172,7 +173,7 @@ const about = {
         images: [],
       },
       {
-        company: "ADLUCENT",
+        company: "Adlucent",
         timeframe: "FEB 2012 - FEB 2015",
         role: "Lead Graphic Designer",
         achievements: [
