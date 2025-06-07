@@ -1,20 +1,20 @@
 import { Logo } from "@/once-ui/components";
 
 const person = {
-  firstName: "Selene",
-  lastName: "Yu",
+  firstName: "Roel",
+  lastName: "Macias",
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Senior Graphic Designer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "indeed@roelmacias.com",
+  location: "America/Chicago", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "HTML", "JavaScript", "CSS", "React", "Node.js", "Git", "Linux", "MacOS", "iOS", "Android"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
-  display: true,
+  display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
   description: (
     <>
@@ -63,7 +63,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
+      I'm {person.firstName}, a {person.role} at <Logo icon={false} style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
       <br /> user experiences. After hours, I build my own projects.
     </>
   ),
@@ -90,9 +90,8 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        Roel is a Senior Graphic Designer with a passion for transforming ideas into reality using elegant design solutions.
+        His work spans print, digital, interactive experiences, and the convergence of design and technology.
       </>
     ),
   },
@@ -101,17 +100,30 @@ const about = {
     title: "Work Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "SOLARWINDS",
+        timeframe: "NOV 2021 - Present",
+        role: "Senior Graphic Design Specialist",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Design banners and emails that are eye-catching, creative, and produce high conversion rates; requires the ability to analyze and learn from the effectiveness of previous campaigns
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Present visual comps to cross-functional teams in support of marketing programs and make modifications based on collaborative feedback
+          </>,
+          <>
+            Create layout comps, rough and presentation material as requested
+          </>,
+          <>
+            Contribute out-of-the-box ideas and innovative concepts to help meet aggressive growth targets for lead generation and corporate awareness
+          </>,
+          <>
+            Collaborate successfully with design team, copywriters, web developers, product management and marketing programs teams
+          </>,
+          <>
+            Effectively present creative materials and ideas to internal stakeholders
+          </>,
+          <>
+            Develop and execute a project from concept to completion
           </>,
         ],
         images: [
@@ -125,20 +137,76 @@ const about = {
         ],
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "HELLAS CONSTRUCTION",
+        timeframe: "OCT 2019 - OCT 2022",
+        role: "Graphic Designer",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            Strategized, conceptualized, and executed marketing campaigns from ideation to completion, ensuring alignment with business goals and client needs.
           </>,
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Designed visually compelling banners, email campaigns, and digital assets optimized for high conversion rates; analyze performance metrics to refine future campaigns.
+          </>,
+          <>
+            Created cut sheets, brochures, product launch materials, and physical pitch desks (RFPs) for sales teams to present to large and small organizations.
+          </>,
+          <>
+            Developed in-stadium advertisements, trade show displays, and branded promotional materials tailored to athletic audiences.
+          </>,
+          <>
+            Presented visual comps and layout drafts to cross-functional teams (sales, product management, leadership) and iterate based on feedback.
+          </>,
+          <>
+            Produced presentation materials, including rough drafts and polished visuals, for internal and external use.
+          </>,
+          <>
+            Generated innovative, out-of-the-box design concepts to support lead generation, client acquisition, and corporate visibility.
+          </>,
+          <>
+            Presented creative work to stakeholders with clear rationale and adjustments based on strategic input.
+          </>,
+          <>
+            Managed end-to-end execution of projects, ensuring timely delivery and adherence to brand standards.
           </>,
         ],
         images: [],
+      },
+      {
+        company: "ADLUCENT",
+        timeframe: "FEB 2012 - FEB 2015",
+        role: "Lead Graphic Designer",
+        achievements: [
+          <>
+            Owned and evolved Adlucent's visual identity, ensuring consistency across all digital and print materials, including logos, color systems, typography, and brand guidelines.
+          </>,
+          <>
+            Created high-impact creative assets for paid search, social media, email marketing, and landing pages that align with campaign goals (e.g., lead generation, client acquisition, brand awareness).
+          </>,
+          <>
+            Designed pitch decks, one-sheets, case studies, infographics, and RFP responses for the sales team to present to prospective clients.
+          </>,
+          <>
+            Produced engaging content for social platforms, ads, and website updates that resonate with our target audience of marketers, agencies, and product managers.
+          </>,
+          <>
+            Partnered with the marketing team to translate complex data and technical concepts into visually compelling narratives for reports, presentations, and client-facing materials.
+          </>,
+          <>
+            Designed banners, booth graphics, and promotional items for industry events and conferences.
+          </>,
+          <>
+            Established and maintain efficient workflows, templates, and brand assets to streamline design requests in a high-velocity startup environment.
+          </>,
+        ],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/project-01/cover-01.jpg",
+            alt: "Once UI Project",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
@@ -147,12 +215,12 @@ const about = {
     title: "Studies",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "St. Edward's University",
+        description: <>Honed my skills in graphic design, typography, and layout principles.</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Boston University",
+        description: <>Studied abroad in London, England during the Summer of 2009.</>,
       },
     ],
   },
@@ -161,8 +229,8 @@ const about = {
     title: "Technical skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Fluent in Adobe Creative Suite",
+        description: <>I prefer the clean lines of vector so my favorite tool is Illustrator.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -180,8 +248,8 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Vibe Coding",
+        description: <>Able to create simple websites and apps with the help of AI.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -194,15 +262,6 @@ const about = {
       },
     ],
   },
-};
-
-const blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work = {
@@ -265,4 +324,4 @@ const gallery = {
   ],
 };
 
-export { person, social, newsletter, home, about, blog, work, gallery };
+export { person, social, newsletter, home, about, work, gallery };
