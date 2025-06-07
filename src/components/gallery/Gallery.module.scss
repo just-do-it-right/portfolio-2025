@@ -11,48 +11,30 @@
 
 .gridItem {
     margin-bottom: var(--static-space-16);
-    transition: transform var(--transition-duration-micro) var(--transition-easing-standard);
 }
 
-.imageWrapper {
-    position: relative;
-    cursor: pointer;
+/* Linked image styles */
+.imageLink {
+    display: block;
+    text-decoration: none;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    border-radius: var(--static-radius-m);
     overflow: hidden;
-    border-radius: var(--radius-m);
-    transition: transform var(--transition-duration-micro) var(--transition-easing-standard);
-    margin-bottom: var(--static-space-16);
 }
 
-.imageWrapper:hover {
-    transform: scale(1.02);
+.imageLink:hover {
+    transform: translateY(-2px);
 }
 
-.imageWrapper:hover .overlay {
-    opacity: 1;
+.imageLink:hover .linkedImage {
+    opacity: 0.9;
 }
 
-.imageWrapper:focus {
-    outline: 2px solid var(--brand-background-strong);
-    outline-offset: 2px;
+.linkedImage {
+    cursor: pointer;
+    transition: opacity 0.2s ease;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.6);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-    transition: opacity var(--transition-duration-micro) var(--transition-easing-standard);
-    border-radius: var(--radius-m);
-}
-
-.overlay span {
-    color: white;
-    font-weight: 500;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+.linkedImage:hover {
+    opacity: 0.9;
 }

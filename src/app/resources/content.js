@@ -1,5 +1,3 @@
-
-
 const person = {
   firstName: "Roel",
   lastName: "Macias",
@@ -59,7 +57,7 @@ const home = {
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">SolarWinds</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/solarwinds",
   },
   subline: (
     <>
@@ -286,16 +284,19 @@ const gallery = {
       src: "/images/gallery/horizontal-1.jpg",
       alt: "image",
       orientation: "horizontal",
+      link: "/work/solarwinds",
     },
     {
       src: "/images/gallery/horizontal-2.jpg",
       alt: "image",
       orientation: "horizontal",
+      link: "/about",
     },
     {
       src: "/images/gallery/horizontal-3.jpg",
       alt: "image",
       orientation: "horizontal",
+      link: "https://github.com/just-do-it-right",
     },
     {
       src: "/images/gallery/horizontal-4.jpg",
@@ -306,11 +307,13 @@ const gallery = {
       src: "/images/gallery/vertical-1.jpg",
       alt: "image",
       orientation: "vertical",
+      link: "/work",
     },
     {
       src: "/images/gallery/vertical-2.jpg",
       alt: "image",
       orientation: "vertical",
+      link: "https://www.linkedin.com/in/solarwinds/",
     },
     {
       src: "/images/gallery/vertical-3.jpg",
