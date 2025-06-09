@@ -57,12 +57,35 @@ function createImage({ alt, src, ...props }: SmartImageProps & { src: string }) 
       radius="m"
       aspectRatio="16 / 10"
       border="neutral-alpha-medium"
-      sizes="(max-width: 960px) 100vw, 960px"
+      sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
       alt={alt}
       src={src}
       {...props}
     />
   );
+}
+
+// Helper function to extract text content from React elements
+function extractTextFromChildren(children: ReactNode): string {
+  if (typeof children === 'string') {
+    return children;
+  }
+  
+  if (typeof children === 'number') {
+    return children.toString();
+  }
+  
+  if (Array.isArray(children)) {
+    return children.map(extractTextFromChildren).join('');
+  }
+  
+  if (React.isValidElement(children)) {
+    if (children.props && children.props.children) {
+      return extractTextFromChildren(children.props.children);
+    }
+  }
+  
+  return '';
 }
 
 function slugify(str: string): string {
@@ -76,7 +99,9 @@ function slugify(str: string): string {
 
 function createHeading(as: "h1" | "h2" | "h3" | "h4" | "h5" | "h6") {
   const CustomHeading = ({ children, ...props }: TextProps<typeof as>) => {
-    const slug = slugify(children as string);
+    // Extract text content from React elements (handles **bold** etc.)
+    const textContent = extractTextFromChildren(children);
+    const slug = slugify(textContent);
     return (
       <HeadingLink
         style={{ marginTop: "var(--static-space-24)", marginBottom: "var(--static-space-12)" }}

@@ -13,16 +13,26 @@ export default function MasonryGrid() {
   };
 
   const renderImage = (image: any, index: number) => {
-    const imageElement = (
-      <SmartImage
-        priority={index < 10}
-        sizes="(max-width: 560px) 100vw, 50vw"
-        radius="m"
-        aspectRatio={image.orientation === "horizontal" ? "16 / 9" : "3 / 4"}
-        src={image.src}
-        alt={image.alt}
-        className={`${styles.gridItem} ${image.link ? styles.linkedImage : ''}`}
-      />
+    // Create a wrapper div that ensures proper sizing
+    const imageContainer = (
+      <div 
+        className={styles.imageContainer}
+        style={{ 
+          width: '100%',
+          aspectRatio: image.orientation === "horizontal" ? "16 / 9" : "3 / 4",
+          marginBottom: 'var(--static-space-16)'
+        }}
+      >
+        <SmartImage
+          priority={index < 10}
+          sizes="(max-width: 560px) 100vw, 50vw"
+          radius="m"
+          src={image.src}
+          alt={image.alt}
+          className={`${styles.gridItem} ${image.link ? styles.linkedImage : ''}`}
+          fillWidth
+        />
+      </div>
     );
 
     // If image has a link, wrap it with Link component
@@ -34,7 +44,7 @@ export default function MasonryGrid() {
           className={styles.imageLink}
           title={`View ${image.alt || 'project'}`}
         >
-          {imageElement}
+          {imageContainer}
         </Link>
       );
     }
@@ -42,7 +52,7 @@ export default function MasonryGrid() {
     // Otherwise, return the image normally
     return (
       <div key={index}>
-        {imageElement}
+        {imageContainer}
       </div>
     );
   };

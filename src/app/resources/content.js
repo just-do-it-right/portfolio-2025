@@ -128,8 +128,8 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/SolarWinds1.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/solarwinds/cover.jpg",
+            alt: "SolarWinds Project",
             width: 16,
             height: 9,
           },
@@ -200,8 +200,8 @@ const about = {
         images: [
           // optional: leave the array empty if you don't want to display images
           {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            src: "/images/projects/adlucent/cover.jpg",
+            alt: "Adlucent Project",
             width: 16,
             height: 9,
           },
@@ -233,14 +233,14 @@ const about = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
+            src: "/images/projects/cloak/cover.jpg",
+            alt: "Design work example",
             width: 16,
             height: 9,
           },
           {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
+            src: "/images/projects/hellas/cover.jpg",
+            alt: "Design work example",
             width: 16,
             height: 9,
           },
@@ -252,8 +252,8 @@ const about = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
+            src: "/images/projects/shipstation/cover.jpg",
+            alt: "Coding project example",
             width: 16,
             height: 9,
           },
@@ -275,55 +275,90 @@ const work = {
 const gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
+  title: `Portfolio Gallery – ${person.name}`,
+  description: `Curated design work by ${person.name}`,
+  // Curated selection of best work across all projects
   images: [
+    // SolarWinds - best pieces
     {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
+      src: "/images/projects/solarwinds/cover.jpg",
+      alt: "SolarWinds enterprise software design",
       orientation: "horizontal",
       link: "/work/solarwinds",
     },
+    // Adlucent - hero pieces
     {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
+      src: "/images/projects/adlucent/gallery/lets_begin_cover4.jpg",
+      alt: "Adlucent brand identity design",
+      orientation: "horizontal", 
+      link: "/work/adlucent",
+    },
+    {
+      src: "/images/projects/adlucent/gallery/never_stop2_2020_croppedv2.jpg",
+      alt: "Never Stop campaign design",
       orientation: "horizontal",
-      link: "/about",
+      link: "/work/adlucent",
     },
+    // Cloak - standout work
     {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
+      src: "/images/projects/cloak/cover.jpg",
+      alt: "Cloak privacy product design",
       orientation: "horizontal",
-      link: "https://github.com/just-do-it-right",
+      link: "/work/cloak",
     },
     {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
+      src: "/images/projects/cloak/gallery/WP-cover.jpg",
+      alt: "Cloak whitepaper design",
       orientation: "horizontal",
+      link: "/work/cloak",
+    },
+    // Hellas - key pieces
+    {
+      src: "/images/projects/hellas/cover.jpg",
+      alt: "Hellas sports turf branding",
+      orientation: "horizontal",
+      link: "/work/hellas",
+    },
+    // ShipStation - highlights
+    {
+      src: "/images/projects/shipstation/cover.jpg",
+      alt: "ShipStation shipping platform design",
+      orientation: "horizontal",
+      link: "/work/shipstation", 
     },
     {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-      link: "/work",
+      src: "/images/projects/shipstation/gallery/tutorial_shipstation.jpg",
+      alt: "ShipStation tutorial design",
+      orientation: "horizontal",
+      link: "/work/shipstation",
     },
+    // AIGA - featured work
     {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-      link: "https://www.linkedin.com/in/solarwinds/",
+      src: "/images/projects/aiga/cover.jpg",
+      alt: "AIGA design association work",
+      orientation: "horizontal",
+      link: "/work/aiga",
     },
+    // Annita - best piece
     {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
+      src: "/images/projects/annita/cover.jpg", 
+      alt: "Annita project design",
+      orientation: "horizontal",
+      link: "/work/annita",
     },
+    // ZTequila - standout
     {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
+      src: "/images/projects/ztequila/cover.jpg",
+      alt: "ZTequila brand design", 
+      orientation: "horizontal",
+      link: "/work/ztequila",
+    },
+    // Infugue - highlight
+    {
+      src: "/images/projects/infugue/cover.jpg",
+      alt: "Infugue project design",
+      orientation: "horizontal", 
+      link: "/work/infugue",
     },
   ],
 };

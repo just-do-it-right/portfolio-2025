@@ -6,6 +6,7 @@ import { baseURL } from "@/app/resources";
 import { about, person, work } from "@/app/resources/content";
 import { formatDate } from "@/app/utils/formatDate";
 import ScrollToHash from "@/components/ScrollToHash";
+import ProjectGallery from "@/components/gallery/ProjectGallery";
 import { Metadata } from "next";
 import { Meta, Schema } from "@/once-ui/modules";
 
@@ -83,6 +84,7 @@ export default async function Project({
           priority
           aspectRatio="16 / 10"
           radius="m"
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
           alt="image"
           src={post.metadata.images[0]}
         />
@@ -96,6 +98,16 @@ export default async function Project({
         </Flex>
         <CustomMDX source={post.content} />
       </Column>
+      
+      {/* Project Gallery - shows all images except the first one (hero) - moved outside small container */}
+      {post.metadata.images && post.metadata.images.length > 1 && (
+        <ProjectGallery 
+          images={post.metadata.images}
+          projectName={post.metadata.title}
+          layout="masonry" // Simple stack layout that matches hero image
+        />
+      )}
+      
       <ScrollToHash />
     </Column>
   );

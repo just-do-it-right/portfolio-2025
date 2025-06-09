@@ -47,6 +47,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       )}
     >
       <head>
+
         <script
           dangerouslySetInnerHTML={{
             __html: `

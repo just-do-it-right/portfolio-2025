@@ -7,23 +7,37 @@
 .masonryGridColumn {
     padding-left: var(--static-space-16);
     background-clip: padding-box;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .gridItem {
     margin-bottom: var(--static-space-16);
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--static-radius-m);
 }
 
 /* Linked image styles */
 .imageLink {
     display: block;
     text-decoration: none;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease, box-shadow 0.2s ease;
     border-radius: var(--static-radius-m);
     overflow: hidden;
 }
 
 .imageLink:hover {
     transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .imageLink:hover .linkedImage {
@@ -31,10 +45,177 @@
 }
 
 .linkedImage {
-    cursor: pointer;
-    transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    width: 100%;
+    height: auto;
 }
 
 .linkedImage:hover {
     opacity: 0.9;
+}
+
+/* Option B: Structured Grid Layout */
+.structuredGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--static-space-16);
+    width: 100%;
+}
+
+.structuredGridItem {
+    width: 100%;
+    height: auto;
+    transition: transform 0.2s ease;
+}
+
+.structuredGridItem:hover {
+    transform: translateY(-4px);
+}
+
+/* Option C: Lightbox Gallery */
+.lightboxThumbnails {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--static-space-12);
+    width: 100%;
+}
+
+.lightboxThumbnail {
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    border-radius: var(--static-radius-m);
+}
+
+.lightboxThumbnail:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+/* Lightbox Modal */
+.lightboxOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.lightboxContent {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.lightboxImage {
+    max-width: 100%;
+    max-height: 90vh;
+    object-fit: contain;
+}
+
+.lightboxClose {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1001;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+}
+
+.lightboxClose:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.lightboxPrev,
+.lightboxNext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+    z-index: 1001;
+}
+
+.lightboxPrev {
+    left: -70px;
+}
+
+.lightboxNext {
+    right: -70px;
+}
+
+.lightboxPrev:hover,
+.lightboxNext:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.lightboxCounter {
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 14px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 4px 12px;
+    border-radius: var(--static-radius-s);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .structuredGrid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: var(--static-space-12);
+    }
+    
+    .lightboxThumbnails {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: var(--static-space-8);
+    }
+    
+    .lightboxPrev {
+        left: -10px;
+    }
+    
+    .lightboxNext {
+        right: -10px;
+    }
+    
+    .lightboxClose {
+        top: -30px;
+        right: -10px;
+    }
 }

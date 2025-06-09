@@ -12,13 +12,13 @@ import {
 
 interface ProjectCardProps {
   href: string;
-  priority?: boolean;
   images: string[];
   title: string;
   content: string;
   description: string;
   avatars: { src: string }[];
   link: string;
+  priority?: boolean;
 }
 
 export const ProjectCard: React.FC<ProjectCardProps> = ({
@@ -29,17 +29,39 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
   description,
   avatars,
   link,
+  priority = false,
 }) => {
   return (
     <Column fillWidth gap="m">
-      <Carousel
-        sizes="(max-width: 960px) 100vw, 960px"
-        aspectRatio="16 / 10"
-        images={images.map((image) => ({
-          src: image,
-          alt: title,
-        }))}
-      />
+      <div style={{ position: 'relative' }}>
+        <Carousel
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
+          aspectRatio="16 / 10"
+          priority={priority}
+          images={images.map((image) => ({
+            src: image,
+            alt: title,
+          }))}
+        />
+        {/* Only add clickable overlay for single-image carousels */}
+        {images.length === 1 && (
+          <div
+            className="carousel-clickable-overlay"
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              cursor: 'pointer',
+              zIndex: 1,
+              backgroundColor: 'transparent'
+            }}
+            onClick={() => window.location.href = href}
+            title="View project"
+          />
+        )}
+      </div>
       <Flex
         mobileDirection="column"
         fillWidth
