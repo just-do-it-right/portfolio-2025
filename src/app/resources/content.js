@@ -168,7 +168,15 @@ const about = {
             Managed end-to-end execution of projects, ensuring timely delivery and adherence to brand standards.
           </>,
         ],
-        images: [],
+        images: [
+          // optional: leave the array empty if you don't want to display images
+          {
+            src: "/images/projects/hellas/cover.jpg",
+            alt: "Hellas Construction",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         company: "Adlucent",
@@ -216,10 +224,26 @@ const about = {
       {
         name: "St. Edward's University",
         description: <>Honed my skills in graphic design, typography, and layout principles.</>,
+        images: [
+          {
+            src: "/images/projects/project-01/stedwards.jpg",
+            alt: "Design work example",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
       {
         name: "Boston University",
         description: <>Studied abroad in London, England during the Summer of 2009.</>,
+        images: [
+          {
+            src: "/images/projects/project-01/london.jpg",
+            alt: "Design work example",
+            width: 16,
+            height: 9,
+          },
+        ],
       },
     ],
   },
@@ -233,14 +257,8 @@ const about = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/cloak/cover.jpg",
-            alt: "Design work example",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/hellas/cover.jpg",
-            alt: "Design work example",
+            src: "/images/projects/project-01/adobe.jpg",
+            alt: "Adobe Creative Cloud",
             width: 16,
             height: 9,
           },
@@ -252,8 +270,8 @@ const about = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/shipstation/cover.jpg",
-            alt: "Coding project example",
+            src: "/images/projects/project-01/coding.jpg",
+            alt: "Code Snippet",
             width: 16,
             height: 9,
           },
