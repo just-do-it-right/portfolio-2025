@@ -82,6 +82,20 @@ export default function Home() {
       </RevealFx>
 
       <Projects range={[2, 2]} />
+      
+      <RevealFx translateY="16" delay={0.2} horizontal="center" paddingY="32">
+        <Button
+          id="view-all-work"
+          data-border="rounded"
+          href="/work"
+          variant="primary"
+          size="l"
+          arrowIcon
+        >
+          View All Work
+        </Button>
+      </RevealFx>
+      
       {newsletter.display && <Mailchimp newsletter={newsletter} />}
     </Column>
   );

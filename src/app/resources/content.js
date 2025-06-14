@@ -311,12 +311,6 @@ const gallery = {
       orientation: "horizontal", 
       link: "/work/adlucent",
     },
-    {
-      src: "/images/projects/adlucent/gallery/never_stop2_2020_croppedv2.jpg",
-      alt: "Never Stop campaign design",
-      orientation: "horizontal",
-      link: "/work/adlucent",
-    },
     // Cloak - standout work
     {
       src: "/images/projects/cloak/cover.jpg",
