@@ -3,7 +3,7 @@
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { Fade, Flex, Line, ToggleButton } from "@/once-ui/components";
+import { Fade, Flex, Line, ToggleButton, Logo } from "@/once-ui/components";
 import styles from "@/components/Header.module.scss";
 
 import { routes, display } from "@/app/resources";
@@ -62,7 +62,7 @@ export const Header = () => {
         data-border="rounded"
       >
         <Flex paddingLeft="12" fillWidth vertical="center" textVariant="body-default-s">
-          {display.location && <Flex hide="s">{person.location}</Flex>}
+          <Logo size="xl" href="/" icon={true} wordmark={false} />
         </Flex>
         <Flex fillWidth horizontal="center">
           <Flex
@@ -145,10 +145,32 @@ export const Header = () => {
             paddingRight="12"
             horizontal="end"
             vertical="center"
-            textVariant="body-default-s"
-            gap="20"
+            gap="12"
           >
-            <Flex hide="s">{display.time && <TimeDisplay timeZone={person.location} />}</Flex>
+            {(display.time || display.location) && (
+              <Flex
+                hide="s"
+                background="surface"
+                border="neutral-alpha-medium"
+                radius="m-4"
+                shadow="l"
+                padding="12"
+                gap="12"
+                vertical="center"
+                textVariant="body-default-s"
+              >
+                {display.location && (
+                  <Flex vertical="center" textVariant="body-default-xs" style={{ opacity: 0.7 }}>
+                    {person.location.replace('America/', '').replace('_', ' ')}
+                  </Flex>
+                )}
+                {display.time && (
+                  <Flex vertical="center" textVariant="body-default-s" style={{ fontWeight: 600, fontFamily: 'monospace' }}>
+                    <TimeDisplay timeZone={person.location} />
+                  </Flex>
+                )}
+              </Flex>
+            )}
           </Flex>
         </Flex>
       </Flex>

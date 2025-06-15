@@ -33,7 +33,11 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <Column fillWidth gap="m">
-      <div style={{ position: 'relative' }}>
+      <div style={{ 
+        position: 'relative',
+        borderRadius: 'var(--radius-l)',
+        overflow: 'hidden'
+      }}>
         <Carousel
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 1200px"
           aspectRatio="16 / 10"
