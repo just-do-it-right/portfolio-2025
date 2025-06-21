@@ -1,0 +1,136 @@
+Example 1
+
+Graphic Design and Production Specialist
+
+
+
+Hellas Construction Inc., headquartered in Austin, TX, is nationwide specializing in sports facility construction. We manufacture,install & resurface artificial turfs & synthetic surfaces while completing the design from start to finish.
+Hellas is seeking candidates for the position of Graphic Design and Production Specialist.
+Job Summary/Responsibilities
+	•	Develop original, innovative, and creative marketing pieces (including but not limited to brochures, emails, landing pages, whitepapers, product guides, flyers, signage, ads) for use online, in direct marketing, and as printed support tools for our organization
+	•	Collaborate and problem solve with marketing team members on objectives, concepts, and content of pieces
+	•	Brainstorm and mock up design ideas for marketing and promotional materials across web, print and other media distribution channels
+	•	Design, update, and maintain imagery, website graphics, and other design items
+	•	Assist with design of new pages on the website, and production of corporate templates of brand assets.
+	•	Effectively manage multiple projects/tasks of varying complexities, meet deadlines and work well under pressure
+	•	Heavy emphasis on Sports related material desired
+	•	Maintaining and updating web based content
+
+Qualifications/Skills
+	•	Bachelor’s degree in Graphic/Digital Design or Visual Communications field of study
+	•	2 to 3 years of experience, agency and education industry experience a plus
+	•	An excellent portfolio of work; including proven experience in digital and print design
+	•	Understanding of and experience in layout, color theory, and typography in both digital and print media.
+	•	Strong understanding of Search Engine Optimization (SEO)
+	•	Excellent presentation, communication, and listening skills
+	•	An openness to constructive feedback and a curiosity and excitement to learn
+	•	Organizational and time-management skills, strong attention to detail
+	•	Proficiency with Adobe Create Suite including InDesign, Photoshop, Illustrator, and Acrobat on Mac Platform; Flash a plus; Videography experience a plus
+Hellas offers an excellent benefits packageincluding medical, dental, visual, life coverage, and 401(k).
+Please submit online portfolio. No telephone calls please.
+Hellas Sports Construction is an EqualOpportunity Employer. For more information about our company, visithellasconstruction.com, matrix-turf.com and epiqtracks.com
+Job Type: Full-time
+Salary: $17.00 to $19.00 /hour
+Experience:
+	•	relevant: 1 year (Preferred)
+	•	graphic design: 1 year (Preferred)
+Education:
+	•	Bachelor's (Preferred)
+Benefits:
+	•	Health insurance
+	•	Dental insurance
+	•	Vision insurance
+	•	Retirement plan
+Schedule:
+	•	Monday to Friday
+	•	Overtime
+
+
+Example 2
+Senior Graphic Designer
+- job post
+SolarWinds
+
+110 reviews
+Austin, TX 78735
+
+
+Overview:
+At SolarWinds, we are a People-First Company. Our purpose is to enrich the lives of the people we serve—including our employees, customers, shareholders, partners, and communities. Join us in our mission to help customers accelerate business transformation with simple, powerful, and secure solutions.
+
+
+The ideal candidate thrives in an innovative, fast-paced environment and is collaborative, accountable, ready, and empathetic. We’re looking for individuals who believe they can accomplish more as a team and create lasting growth for themselves and others. We hire based on attitude, competency, and commitment. Solarians are ready to advance SolarWinds’ world-class solutions in a fast-paced environment and accept the challenge to lead with purpose. If you’re looking to build your career with an exceptional team, you’ve come to the right place. Join SolarWinds and grow with us!
+
+
+Your Role
+
+
+SolarWInds is seeking a Senior Graphic Designer to create emails, banner ads, landing pages, brochures, large-scale signage, infographics, eBooks and more. The perfect candidate understands how to design for the web and create strong online user experiences.
+Responsibilities:
+Your Impact
+	•	Work with marketing team to strategize and concept marketing campaign needs from beginning to end of projects
+	•	Design banners and emails that are eye-catching, creative, and produce high conversion rates; requires the ability to analyze and learn from the effectiveness of previous campaigns
+	•	Present visual comps to cross-functional teams in support of marketing programs and make modifications based on collaborative feedback
+	•	Create layout comps, rough and presentation material as requested
+	•	Contribute out-of-the-box ideas and innovative concepts to help meet aggressive growth targets for lead generation and corporate awareness
+	•	Collaborate successfully with design team, copywriters, web developers, product management and marketing programs teams
+	•	Effectively present creative materials and ideas to internal stakeholders
+	•	Develop and execute a project from concept to completion
+Qualifications:
+Your Experience
+	•	6+ years of professional experience in graphic design, visual design or a related field
+	•	Bachelor’s Degree in Fine Arts, Graphic Design or equivalent degree
+	•	Proficient MAC skills, including Microsoft Office Suite
+	•	Proficiency in Photoshop, Illustrator and the current Adobe Creative Suite
+	•	Highly creative thinker who can collaborate with peers and copywriters on creating compelling graphics and headlines that together leave a lasting impression
+	•	Effective communicator who can take high-level direction, articulate design decisions and incorporate feedback
+	•	Online portfolio featuring engaging interactive, print and marketing designs
+	•	Strong visual design and typography skills
+	•	Ability to execute design and edits quickly and effectively in a fast-paced environment where multi-tasking is necessary
+	•	Strong team player who is self-motivated, proactive and resourceful
+	•	Energetic team player who brings creativity to the table and thrives in a collaborative environment
+	•	Established track record of consistent delivery and meeting or exceeding deadlines
+	•	Ability to demonstrate competency in layout sketching and typography in a portfolio
+	•	Intermediate knowledge of visual design process and visual design principles.
+Preferences
+	•	Strong illustration skills
+	•	Above-average photo editing and manipulation skills
+	•	Conversant in HTML and CSS
+Provide cover letter, resume and a link to your online portfolio. Inquiries without portfolios will not be considered.
+
+
+
+
+SolarWinds
+30+ days ago
+
+Report job
+
+
+
+Example structure
+## Overview
+
+Development of a flexible and highly customizable design system using Next.js for front-end and Figma for design collaboration.
+
+## Key Features
+
+- **Component Library**: Built a set of modular, reusable UI components using React and styled-components in Next.js, focusing on accessibility and responsiveness.
+- **Theming and Customization**: Integrated a theming system that allows easy switching and customization of color palettes, typography, and layout styles using CSS variables and Figma tokens.
+- **Figma Integration**: Collaborated closely with designers by setting up a shared design library in Figma. This library was synchronized with the codebase, ensuring design handoffs were seamless and that design tokens remained consistent across both platforms.
+- **Documentation and Usage Guidelines**: Developed comprehensive documentation with Storybook to showcase components, usage patterns, and best practices, ensuring the design system is easy to adopt by other teams.
+
+## Technologies Used
+
+- **Next.js**: For fast, server-rendered React applications.
+- **Figma**: For creating and managing design assets and prototypes.
+- **Styled-Components**: For styling React components with a modular, themable approach.
+- **Storybook**: For building an interactive, documented component library.
+
+## Challenges and Learnings
+
+One key challenge was balancing the need for flexibility with the desire to maintain design consistency. The solution involved creating well-defined design tokens and establishing clear guidelines for when and how components could be customized. Additionally, setting up effective collaboration workflows between designers and developers using Figma and Git was a learning experience that greatly improved the process.
+
+## Outcome
+
+The design system is now actively used across multiple projects, leading to faster development cycles, fewer design inconsistencies, and improved collaboration between design and development teams. It has become a foundation for scaling our products efficiently while ensuring a cohesive user experience.
